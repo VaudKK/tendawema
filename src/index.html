@@ -1,99 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tenda Wema Home</title>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <link rel="stylesheet" href="./output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-</head>
-<body class="font-roboto">
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-roboto">
     <nav class="bg-white flex justify-between items-center mx-auto w-[90%]">
-        <div>
-            <a href="https://localhost:5500/index.html">
-                <img src="./logo/Logo.svg" class="h-20" alt="Tenda Wema Logo" />
-            </a>
-        </div>
-        <div class="nav-links z-50 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
-            <ul class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
-                <li>
-                    <a class="hover:text-gray-500" href="#">Home</a>
-                </li>
-                <li>
-                    <a class="hover:text-gray-500" href="#">Projects</a>
-                </li>
-                <li>
-                    <a class="hover:text-gray-500" href="#">Gallery</a>
-                </li>
-                <li>
-                    <a class="hover:text-gray-500" href="#">About</a>
-                </li>
-            </ul>
-        </div>
-        <div class="flex items-center gap-6 md:hidden">
-            <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
-        </div>
+      <div>
+        <a href="https://localhost:5500/index.html">
+          <img src="./logo/Logo.svg" class="h-20" alt="Tenda Wema Logo" />
+        </a>
+      </div>
+      <div
+        class="nav-links z-50 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+      >
+        <ul
+          class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
+        >
+          <li>
+            <a class="hover:text-gray-500" href="#">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Projects</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">Gallery</a>
+          </li>
+          <li>
+            <a class="hover:text-gray-500" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-6 md:hidden">
+        <ion-icon
+          onclick="onToggleMenu(this)"
+          name="menu"
+          class="text-3xl cursor-pointer"
+        ></ion-icon>
+      </div>
     </nav>
-    <div class="relative w-full md:h-[720px] h-[480px]">
-        <div class="absolute inset-0">
-            <img src="./images/home/landing.jpg" alt="Home Hero Background" class="object-cover object-center w-full h-full">
-        </div>
+    <div class="relative w-full min-h-[50vh]">
+      <div class="absolute inset-0">
+        <img
+          src="./images/home/landing.jpg"
+          alt="Home Hero Background"
+          class="object-cover object-center w-full h-full"
+        />
+      </div>
     </div>
-    <div class="w-full md:h-[500px] h-[480px] grid md:grid-cols-2 text-white">
-        <div class="xs:order-2 bg-green-950 flex flex-col items-center justify-center">
-            <div class="w-1/2">
-                <p class="md:text-5xl text-3xl">EDUCATE</p>
-                <p class="md:text-3xl text-xl capitalize py-10 font-light">we identify and support vulnerable 
-                    community members to become self-reliant 
-                    through facilitating timely access to quality 
-                    education.</p>
-            </div>
+    <div class="w-full min-h-[80vh] grid md:grid-cols-2 text-white">
+      <div
+        class="order-2 md:order-1 bg-green-950 flex flex-col items-center justify-center"
+      >
+        <div class="w-3/4 md:w-1/2 ">
+          <p class="md:text-5xl text-3xl">EDUCATE</p>
+          <p class="md:text-3xl text-xl capitalize py-10 font-light">
+            we identify and support vulnerable community members to become
+            self-reliant through facilitating timely access to quality
+            education.
+          </p>
         </div>
-        <div>
-            <img src="./images/home/teacher.jpeg" alt="Teacher" class="object-cover object-center w-full h-full">
-        </div>
-    </div>
-
-    <div class="w-full h-[500px] grid grid-cols-2 text-white">
-        <div>
-            <img src="./images/home/parade.jpeg" alt="Parade" class="object-cover object-center h-full">
-        </div>
-        <div class="bg-amber-950 flex flex-col items-center justify-center">
-            <div class="w-1/2">
-                <p class="text-5xl">EMPOWER</p>
-                <p class="text-3xl capitalize py-10 font-light">provision of basic needs through 
-                    identifying and supporting
-                     the extremely vulnerable with food, rent and safety and hygiene items.</p>
-            </div>
-        </div>
+      </div>
+      <img
+        src="./images/home/teacher.jpeg"
+        alt="Teacher"
+        class="object-cover object-center w-full h-full order-1 md:order-2"
+      />
     </div>
 
-    <div class="w-full h-[500px] grid grid-cols-2 text-white">
-        <div class="bg-sky-600 flex flex-col items-center justify-center">
-            <div class="w-1/2">
-                <p class="text-5xl">GIVE HOPE</p>
-                <p class="text-3xl capitalize py-10 font-light">Love and compassion are at the heart of true generosity.
-                     When we give with love, we create hope for others.</p>
-            </div>
+    <div class="w-full min-h-[80vh] grid grid-cols-2 text-white">
+      <div class="col-span-2 md:col-span-1">
+        <img
+          src="./images/home/parade.jpeg"
+          alt="Parade"
+          class="object-cover object-center h-full"
+        />
+      </div>
+      <div class="bg-amber-950 flex flex-col items-center justify-center col-span-2 md:col-span-1">
+        <div class="w-3/4 md:w-1/2">
+          <p class="text-5xl">EMPOWER</p>
+          <p class="text-3xl capitalize py-10 font-light">
+            provision of basic needs through identifying and supporting the
+            extremely vulnerable with food, rent and safety and hygiene items.
+          </p>
         </div>
-        <div>
-            <img src="./images/home/happy_kids.jpg" alt="Happy Kids" class="object-cover object-center w-full h-full">
-        </div>
+      </div>
     </div>
 
-    <div>
-
+    <div class="w-full min-h-[80vh] grid grid-cols-2 text-white">
+      <div class="bg-sky-600 flex flex-col items-center justify-center col-span-2 md:col-span-1 order-2 md:order-1">
+        <div class="w-3/4 md:w-1/2">
+          <p class="text-5xl">GIVE HOPE</p>
+          <p class="text-3xl capitalize py-10 font-light">
+            Love and compassion are at the heart of true generosity. When we
+            give with love, we create hope for others.
+          </p>
+        </div>
+      </div>
+      <div class="col-span-2 md:col-span-1 order-1 md:order-2">
+        <img
+          src="./images/home/happy_kids.jpg"
+          alt="Happy Kids"
+          class="object-cover object-center w-full h-full"
+        />
+      </div>
     </div>
+
+    <div></div>
 
     <script>
-        const navLinks = document.querySelector('.nav-links')
-        function onToggleMenu(e){
-            e.name = e.name === 'menu' ? 'close' : 'menu'
-            navLinks.classList.toggle('top-[9%]')
-        }
+      const navLinks = document.querySelector(".nav-links");
+      function onToggleMenu(e) {
+        e.name = e.name === "menu" ? "close" : "menu";
+        navLinks.classList.toggle("top-[9%]");
+      }
     </script>
-</body>
+  </body>
 </html>

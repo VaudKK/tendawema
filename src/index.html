@@ -27,16 +27,16 @@
           class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
         >
           <li>
-            <a class="hover:text-gray-500" href="#">Home</a>
+            <a class="hover:text-gray-500" href="./index.html">Home</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#">Projects</a>
+            <a class="hover:text-gray-500" href="./pages/projects.html">Projects</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#">Gallery</a>
+            <a class="hover:text-gray-500" href="./pages/gallery.html">Gallery</a>
           </li>
           <li>
-            <a class="hover:text-gray-500" href="#">About</a>
+            <a class="hover:text-gray-500" href="./pages/about.html">About Us</a>
           </li>
         </ul>
       </div>
@@ -48,7 +48,7 @@
         ></ion-icon>
       </div>
     </nav>
-    <div class="relative w-full min-h-[50vh]">
+    <div class="relative w-full min-h-[80vh]">
       <div class="absolute inset-0">
         <img
           src="./images/home/landing.jpg"
@@ -57,12 +57,15 @@
         />
       </div>
     </div>
-    <div class="w-full min-h-[80vh] grid md:grid-cols-2 text-white">
+    <div class="md:hidden min-h-[8vh] flex justify-center items-center">
+        <p class="text-2xl font-bold">WHAT WE DO</p>
+    </div>
+    <div class="w-full min-h-[70vh] grid md:grid-cols-2 text-white">
       <div
         class="order-2 md:order-1 bg-green-950 flex flex-col items-center justify-center"
       >
         <div class="w-3/4 md:w-1/2 ">
-          <p class="md:text-5xl text-3xl">EDUCATE</p>
+          <p class="md:text-5xl text-3xl font-light">EDUCATE</p>
           <p class="md:text-3xl text-xl capitalize py-10 font-light">
             we identify and support vulnerable community members to become
             self-reliant through facilitating timely access to quality
@@ -77,7 +80,7 @@
       />
     </div>
 
-    <div class="w-full min-h-[80vh] grid grid-cols-2 text-white">
+    <div class="w-full min-h-[70vh] grid grid-cols-2 text-white">
       <div class="col-span-2 md:col-span-1">
         <img
           src="./images/home/parade.jpeg"
@@ -87,8 +90,8 @@
       </div>
       <div class="bg-amber-950 flex flex-col items-center justify-center col-span-2 md:col-span-1">
         <div class="w-3/4 md:w-1/2">
-          <p class="text-5xl">EMPOWER</p>
-          <p class="text-3xl capitalize py-10 font-light">
+          <p class="md:text-5xl text-3xl font-light">EMPOWER</p>
+          <p class="md:text-3xl text-xl capitalize py-10 font-light">
             provision of basic needs through identifying and supporting the
             extremely vulnerable with food, rent and safety and hygiene items.
           </p>
@@ -96,11 +99,11 @@
       </div>
     </div>
 
-    <div class="w-full min-h-[80vh] grid grid-cols-2 text-white">
+    <div class="w-full min-h-[70vh] grid grid-cols-2 text-white">
       <div class="bg-sky-600 flex flex-col items-center justify-center col-span-2 md:col-span-1 order-2 md:order-1">
         <div class="w-3/4 md:w-1/2">
-          <p class="text-5xl">GIVE HOPE</p>
-          <p class="text-3xl capitalize py-10 font-light">
+          <p class="md:text-5xl text-3xl font-light">GIVE HOPE</p>
+          <p class="md:text-3xl text-xl capitalize py-10 font-light">
             Love and compassion are at the heart of true generosity. When we
             give with love, we create hope for others.
           </p>
@@ -115,14 +118,61 @@
       </div>
     </div>
 
-    <div></div>
+    <div class="min-h-[70vh]">
 
-    <script>
-      const navLinks = document.querySelector(".nav-links");
-      function onToggleMenu(e) {
-        e.name = e.name === "menu" ? "close" : "menu";
-        navLinks.classList.toggle("top-[9%]");
-      }
-    </script>
+    </div>
+
+    <div class="min-h-[20vh]"></div>
+
+    <script src="./toggle.js"></script>
   </body>
+  
+
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="./index.html" class="flex items-center">
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tenda Wema Community Project</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="./pages/projects.html" class="hover:underline">Projects</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="./pages/gallery.html" class="hover:underline">Gallery</a>
+                      </li>
+                      <li>
+                        <a href="./pages/" class="hover:underline">About Us</a>
+                    </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://x.com/TendaWema52" class="hover:underline ">X</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://www.instagram.com/tendawema52/" class="hover:underline">Instagram</a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/tenda-wema-b2a8a1321" class="hover:underline">Linked In</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="./index.html" class="hover:underline">Tenda Wema CBO</a>. All Rights Reserved.
+          </span>
+      </div>
+    </div>
+</footer>
+
 </html>

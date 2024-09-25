@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="font-roboto">
+    <nav class="bg-white flex justify-between items-center mx-auto w-[90%]">
+        <div>
+          <a href="https://localhost:5500/index.html">
+            <img src="../logo/Logo.svg" class="h-20" alt="Tenda Wema Logo" />
+          </a>
+        </div>
+        <div
+          class="nav-links z-50 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
+          >
+            <li>
+              <a class="hover:text-gray-500" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./projects.html">Projects</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 md:hidden">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer"
+          ></ion-icon>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-500">
+        <div class="p-10 md:max-w-[70vw] md:text-justify">
+            <h1 class="md:text-6xl text-4xl font-normal text-white mb-10">Programs</h1>
+            <p class="text-base font-light text-white">
+                Tenda Wema has made significant strides in supporting vulnerable refugee and host communities in Kenya. 
+                Over the years, the organization has implemented various programs that directly impact the well-being and future of the people they serve.
+                Below is an elaboration on the key programs undertaken by Tenda Wema.
+            </p>
+        </div>
+    </section>
+    <div class="flex flex-col mx-auto w-[90%]">
+        <!-- Education -->
+        <div class="flex flex-col mt-20">
+            <h2 class="md:text-4xl md:text-justify text-2xl mb-5">Education</h2>
+            <p class="text-base font-light my-5">Education is a cornerstone of Tenda Wema's mission.
+                 The organization firmly believes in the transformative power of education as a tool for breaking the cycle of poverty.
+                  In 2023, Tenda Wema took a significant step by establishing Tenda Wema Community School in Kitengela, Kajiado, Kenya.
+                   This school serves around 300 pupils annually, providing them with quality education and an opportunity for a brighter future.</p>
+
+            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-10 mt-10">
+                <!-- Cards -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/gallery/img15.jpeg" alt="community school">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">The Role of Tenda Wema Community School</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            The Tenda Wema Community School acts as a hub for positive change, nurturing socially responsible citizens and strengthening community bonds.
+                             By offering more than just academic knowledge, the school fosters a sense of civic duty and social responsibility among its students.
+                              The curriculum is designed to ensure students not only excel in academics but also grow into individuals who can contribute positively to society.
+                            Incorporating charity and compassion into the school’s ethos,
+                             Tenda Wema ensures that the students are well-rounded and aware of their role in their communities.
+                              The school serves as a model for holistic development, going beyond textbooks to instill values of empathy, leadership, and community service. 
+                              This approach ensures that the graduates are not only academically sound but are also equipped to be future change makers
+                            
+                        </p>
+                      </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/gallery/img10.jpeg" alt="educational support">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">Educational Support Programs</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            To ensure that no child is left behind, Tenda Wema offers affordable fees rates (from as little as 3000ksh per term) to students from low-income families.
+                             This financial support allows vulnerable children to access quality education, an opportunity they might otherwise miss. 
+                             The school also runs a school feeding program, which provides nutritious meals to students. 
+                             This initiative addresses the issue of hunger, ensuring students remain focused and engaged in their studies.
+                            Tenda Wema also provides essential learning materials such as books and stationery. 
+                            These resources help create a conducive learning environment and ensure that every child, 
+                            regardless of their financial status, has the tools necessary to succeed in school.        
+                        </p>
+                      </div>
+                </div>
+
+            </div>
+
+            <!-- Second Row Education-->
+
+            <div class="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-10 mt-10">
+                <!-- Cards -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/general/language.webp" alt="language">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">French Language Proficiency</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            The Tenda Wema Community School stands out for its proficiency in the French language. 
+                            Recognizing the importance of multilingualism in today’s world, the school offers French language classes as part of its curriculum.
+                             This not only benefits the refugee children, many of whom come from French-speaking countries, but also the children of the host community.
+                              The school extends French language tutoring services to the host community, providing an opportunity for children to learn a new language that can
+                               enhance their future prospects. By offering French language instruction, Tenda Wema bridges cultural and linguistic gaps, 
+                               fostering greater integration and understanding within the community.
+                            
+                        </p>
+                      </div>
+                </div>
+
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/general/accelerated_education.webp" alt="accelerated education">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">Accelerated Education Program</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            Tenda Wema also runs an Accelerated Education Program (AEP), which is specifically designed to help students who have fallen behind in their
+                             education due to displacement, conflict, or other challenges. This program admits students and offers them an intensive crash course, allowing 
+                             them to catch up on missed schooling and proceed with their education at the appropriate level.
+                            The AEP works by condensing several years of education into a shorter timeframe, ensuring that students can quickly cover the material they need 
+                            to advance. Teachers provide targeted instruction, focusing on core subjects to equip students with the knowledge and skills required to succeed.
+                             This program is particularly beneficial for older students who may have missed out on several years of schooling and need to re-enter the formal
+                              education system at a level appropriate for their age.
+       
+                        </p>
+                      </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <!-- Livelihood -->
+        <div class="flex flex-col mt-20">
+            <h2 class="md:text-4xl md:text-justify text-2xl mb-5">Livelihood</h2>
+            <p class="text-base text-justify font-light my-5">Tenda Wema Community Project plays a vital role in improving the livelihoods of vulnerable population 
+                 by providing essential resources, such as food and clothing. These contributions directly impact the lives of refugee and host community members,
+                  ensuring they have access to basic needs like nutritious meals and proper clothing. By addressing these fundamental needs, Tenda Wema contributes 
+                  to poverty alleviation and fosters an environment where families no longer have to worry about hunger or shelter.
+                With basic necessities met, families can shift their focus to other critical aspects of their lives, such as pursuing education for their 
+                children or employment opportunities. The provision of food, clothing, and shelter acts as a safety net for vulnerable individuals,
+                 helping them regain stability and pursue economic independence. This initiative is crucial in promoting social welfare and preventing individuals 
+                 from falling into deeper cycles of poverty.
+            </p>
+            <div class="rounded-2xl overflow-hidden">
+                <img src="../images/general/food_donations.jpeg" alt="">
+            </div>
+        </div>
+
+
+         <!-- Partnerships -->
+         <div class="flex flex-col mt-20">
+            <h2 class="md:text-4xl md:text-justify text-2xl mb-5">Partnerships</h2>
+            <p class="text-base text-justify font-light my-5">
+                Tenda Wema’s success is not only attributed to its internal programs but also to the strategic partnerships it has formed with key organizations.
+                 These partnerships are instrumental in supporting the organization's activities and expanding its reach.
+            </p>
+            <div class="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-10 mt-10">
+                <!-- Inkomoko -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/general/inkomoko.png" alt="community school">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">Partnership with Inkomoko</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            Tenda Wema has a significant partnership with Inkomoko, an organization that specializes in providing business development services
+                             to refugees and host communities. Through this partnership, Tenda Wema has been able to access resources and expertise that enhance 
+                             its socio-economic empowerment programs. Inkomoko supports Tenda Wema by offering training, mentorship, and access to financial 
+                             opportunities/ investment support to better support the beneficiaries of Tenda Wema’s programs, helping them grow their and become financially 
+                             independent.
+                        </p>
+                      </div>
+                </div>
+
+
+                <!-- Cohere -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/general/cohere.png" alt="community school">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">Partnership with Cohere</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            Another partnership is with Cohere, an organization that works to support refugee-led organizations in delivering impactful services. 
+                            Cohere offers capacity-building support to Tenda Wema, ensuring that the organization can effectively deliver its programs. 
+                            This partnership has strengthened Tenda Wema’s ability to provide quality education, vocational training, and livelihoods support by equipping the 
+                            organization with the necessary tools. 
+                        </p>
+                      </div>
+                </div>
+
+
+                <!-- RefugePoint -->
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img class="w-full" src="../images/general/refugepoint.png" alt="community school">
+                    <div class="px-6 py-4">
+                        <div class="font-semibold text-xl mb-2">Partnership with RefugePoint</div>
+                        <p class="text-gray-700 text-base md:text-justify font-light">
+                            RefugePoint, an organization dedicated to providing solutions for refugees in need of lasting protection and opportunities, 
+                            has also partnered with Tenda Wema. This collaboration focuses on expanding the reach of Tenda Wema’s programs, particularly 
+                            in areas such as education and socio-economic empowerment. 
+                        </p>
+                      </div>
+                </div>
+            </div>
+         </div>
+
+
+         <!-- Motivation -->
+        <div class="flex flex-col mt-20">
+            <h2 class="md:text-4xl md:text-justify text-2xl mb-5">Motivation</h2>
+            <div class="rounded-2xl overflow-hidden md:max-h-[75vh]">
+                <img src="../images/general/motivation.jpg" alt="motivation">
+            </div>
+            <p class="text-base text-justify font-light my-5">
+                Tenda Wema Community Project continues to make a profound difference in the lives of vulnerable refugee and host
+                 communities through its comprehensive programs in livelihoods, education, and partnerships. 
+                 The organization’s focus on providing essential resources, offering quality education, and forging strategic partnerships has created a lasting impact, 
+                 helping individuals and families break free from cycles of poverty. Through its initiatives, 
+                 Tenda Wema is not only changing lives today but also laying the foundation for a more empowered and self-sufficient community for the future.
+            </p>
+        </div>
+    </div>   
+    
+    <div class="min-h-[20vh]"></div>
+    <script src="../toggle.js"></script>
+</body>
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="../index.html" class="flex items-center">
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tenda Wema Community Project</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="./projects.html" class="hover:underline">Projects</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="./gallery.html" class="hover:underline">Gallery</a>
+                      </li>
+                      <li>
+                        <a href="./about.html" class="hover:underline">About Us</a>
+                    </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="https://x.com/TendaWema52" class="hover:underline ">X</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://www.instagram.com/tendawema52/" class="hover:underline">Instagram</a>
+                      </li>
+                      <li>
+                        <a href="https://www.linkedin.com/in/tenda-wema-b2a8a1321" class="hover:underline">Linked In</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="../index.html" class="hover:underline">Tenda Wema CBO</a>. All Rights Reserved.
+          </span>
+      </div>
+    </div>
+</footer>
+</html>

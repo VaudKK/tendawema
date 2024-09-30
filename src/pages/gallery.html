@@ -22,7 +22,7 @@
           </a>
         </div>
         <div
-          class="nav-links z-50 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+          class="nav-links z-10 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
         >
           <ul
             class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
@@ -32,6 +32,9 @@
             </li>
             <li>
               <a class="hover:text-gray-500" href="./programs.html">Programs</a>
+            </li>
+            <li>
+                <a class="hover:text-gray-500" href="./impact.html">Impact</a>
             </li>
             <li>
               <a class="hover:text-gray-500" href="./gallery.html">Gallery</a>
@@ -55,7 +58,7 @@
         <div class="p-10 md:max-w-[70vw] md:text-justify">
             <h1 class="md:text-6xl text-4xl font-normal text-white mb-10">Our Memories</h1>
             <p class="text-base font-light text-white">
-                Indeed, there’s something magical about how an image can conveyso much more than a lengthy explanation.
+                Indeed, there’s something magical about how an image can convey so much more than a lengthy explanation.
             </p>
         </div>
     </section>
@@ -113,7 +116,7 @@
     </div>
 
     <!--Modal-->
-    <div class="hidden fixed z-60 top-0 right-0 w-[100vw] h-[100vh] overflow-hidden bg-black bg-opacity-85" id="lightbox">
+    <div class="hidden fixed z-50 top-0 right-0 w-[100vw] h-[100vh] overflow-hidden bg-black bg-opacity-85" id="lightbox">
         <span class="bg-white text-4xl absolute mt-10 ml-10 cursor-pointer" id="close">&times;</span>
         <img src="" alt="" class="block m-auto max-w-[90%] max-h-[90%]" id="lightbox-image">
     </div>
@@ -140,6 +143,7 @@
             const imageSrc = e.target.src;
             lightboxImage.src = imageSrc;
             lightbox.style.display = 'flex';
+            lightbox.style.zIndex = '50'
             }
         });
 
@@ -170,6 +174,9 @@
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
                         <a class="hover:text-gray-500" href="./programs.html">Programs</a>
+                      </li>
+                      <li class="mb-4">
+                        <a class="hover:text-gray-500" href="./impact.html">Impact</a>
                       </li>
                       <li class="mb-4">
                           <a href="./gallery.html" class="hover:underline">Gallery</a>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impact</title>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../impact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> 
+</head>
+<body>
+    <nav class="bg-white flex justify-between items-center mx-auto w-[90%]">
+        <div>
+          <a href="https://localhost:5500/index.html">
+            <img src="../logo/Logo.svg" class="h-20" alt="Tenda Wema Logo" />
+          </a>
+        </div>
+        <div
+          class="nav-links z-50 duration-500 md:static absolute bg-white md:min-h-fit min-h-[30vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5"
+        >
+          <ul
+            class="flex font-bold md:flex-row flex-col md:items-center md:gap-[4vw] gap-6"
+          >
+            <li>
+                <a class="hover:text-gray-500" href="../index.html">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./programs.html">Programs</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./impact.html">Impact</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./gallery.html">Gallery</a>
+            </li>
+            <li>
+              <a class="hover:text-gray-500" href="./pages/about.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6 md:hidden">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu"
+            class="text-3xl cursor-pointer"
+          ></ion-icon>
+        </div>
+    </nav>
+
+    <!--Header-->
+    <section class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
+        <div class="p-10 md:max-w-[70vw] md:text-justify">
+            <h1 class="md:text-6xl text-4xl font-normal text-white mb-10">Impact & Success Stories</h1>
+            <p class="text-base font-light text-white">
+                Tenda Wema Community Project has grown into a beacon of hope and transformation for vulnerable refugee and 
+                host communities in Kenya. Since its founding in 2014, the organization has made significant strides in 
+                uplifting lives through education, livelihoods, and socio-economic empowerment. Below, we highlight the 
+                impact and success stories that demonstrate the profound difference Tenda Wema has made.
+            </p>
+        </div>
+    </section>
+
+    <div class="flex items-center justify-center mt-20 mb-20 w-full">
+        <section class="grid gap-12 md:grid-cols-4 md:gap-20 mt-10">
+            <!-- Block #1 -->
+            <article>
+                <h2>
+                    <span class="flex tabular-nums text-slate-900 text-8xl font-semibold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]" x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:300]'">
+                        <span class="supports-[counter-set]:sr-only">300</span><p class="text-5xl font-extrabold">+</p>
+                    </span>
+                    <span class="text-xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2">Kids Educated</span>
+                </h2>
+            </article>
+
+             <!-- Block #2 -->
+             <article>
+                <h2>
+                    <span class="flex tabular-nums text-slate-900 text-8xl font-semibold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]" x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:150]'">
+                        <span class="supports-[counter-set]:sr-only">150</span><p class="text-5xl font-extrabold">+</p>
+                    </span>
+                    <span class="text-xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2">People Supported</span>
+                </h2>
+            </article>
+
+
+             <!-- Block #3 -->
+             <article>
+                <h2>
+                    <span class="flex tabular-nums text-slate-900 text-8xl font-semibold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]" x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:200]'">
+                        <span class="supports-[counter-set]:sr-only">200</span><p class="text-5xl font-extrabold">+</p>
+                    </span>
+                    <span class="text-xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2">VSLAs</span>
+                </h2>
+            </article>
+
+            <!-- Block #4 -->
+            <article>
+              <h2>
+                  <span class="flex tabular-nums text-slate-900 text-8xl font-semibold mb-2 transition-[_--num] duration-[3s] ease-out [counter-set:_num_var(--num)] supports-[counter-set]:before:content-[counter(num)]" x-data="{ shown: false }" x-intersect="shown = true" :class="shown && '[--num:50]'">
+                      <span class="supports-[counter-set]:sr-only">50</span><p class="text-5xl font-extrabold">+</p>
+                  </span>
+                  <span class="text-xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2">A.E.P Students</span>
+              </h2>
+          </article>
+        </section>
+    </div>
+
+    <div class="flex flex-col items-center mx-auto md:ml-20 md:mr-20 ml-5 mr-5">
+      <div class="flex flex-col md:mt-20">
+          <h2 class="md:text-5xl md:text-justify text-2xl mb-5">1. Education: Admission of 300 Students and Counting</h2>
+          <p class="text-base text-justify font-light my-5">Tenda Wema Community School, established in Kitengela, Kajiado County, Kenya, has become a vital resource for the local community, enrolling over 300 students since January 2023. The school’s continuous growth is a testament to its high-quality, Christian-based teaching methods that not only emphasize academic excellence but also the moral and ethical development of the students. The curriculum integrates Christian values, creating an environment that fosters respect, discipline, and community spirit.
+            The success of Tenda Wema’s educational program can be attributed to the holistic approach that combines academic rigor with a nurturing environment, making it attractive to both refugee and host community families. As the school grows, its ability to admit more students continues to expand, creating opportunities for children from underprivileged backgrounds to receive quality education. The increasing demand for enrollment reflects the school’s strong reputation within the community, with many parents seeking a stable, values-based educational experience for their children.            
+          </p>
+      </div>
+
+      <div class="flex flex-col md:mt-20">
+        <h2 class="md:text-5xl md:text-justify text-2xl mb-5">2. Food Donations to Students' Families in Need</h2>
+        <p class="text-base text-justify font-light my-5">Recognizing the financial struggles that many families in the community face, Tenda Wema has gone beyond education by providing food donations to the families of students in need. Since its establishment, Tenda Wema has consistently supported vulnerable households by distributing food packages that ensure children can continue attending school without the distraction of hunger. These donations are not limited to school children but also extend to their families, allowing the organization to address the broader issue of food insecurity.
+          In 2023 alone, Tenda Wema provided food donations to over 150 families, ensuring that children and their households have access to basic nutrition. This initiative has been instrumental in keeping students in school and improving their academic performance, as hunger is one of the main barriers to learning. Many of these families rely on irregular income or are part of low-wage labor, and the food donations alleviate some of the financial pressure, allowing them to focus on other aspects of their lives, 
+          such as work and self-improvement.          
+        </p>
+      </div>
+
+      <div class="flex flex-col md:mt-20">
+        <h2 class="md:text-5xl md:text-justify text-2xl mb-5">3. Support for Livelihoods through VSLAs and Table Banking</h2>
+        <p class="text-base text-justify font-light my-5">Tenda Wema’s impact extends beyond education, as the organization has been actively involved in empowering community members economically. One of the key initiatives that has made a significant difference is the introduction of Village Savings and Loan Associations (VSLAs) and table banking. These programs have provided vulnerable individuals, particularly women, with the opportunity to save money, access credit, and invest in small businesses or family needs.
+          By organizing community members into savings groups, Tenda Wema has enabled individuals to pool their resources and lend money to each other at low interest rates, a critical step toward financial independence. So far, the VSLAs have supported over 200 livelihoods, with many participants using the loans to start or expand small businesses such as grocery stalls, tailoring shops, and poultry farming. These businesses not only generate income but also contribute to the local economy by providing essential goods and services.
+          Table banking has been another tool used by Tenda Wema to empower community members, with group members meeting regularly to save and borrow money directly from their collective pool. This system allows members to access credit without the need for formal financial institutions, which can be inaccessible to refugees and those without collateral. With the help of these programs, many families have been able to improve their economic situation, pay for their children’s education, and invest in household improvements.                   
+        </p>
+      </div>
+
+      <div class="flex flex-col md:mt-20">
+        <h2 class="md:text-5xl md:text-justify text-2xl mb-5">4. Success through the Accelerated Education Program</h2>
+        <p class="text-base text-justify font-light my-5">Tenda Wema’s Accelerated Education Program (AEP) has been a lifeline for students who have experienced disruptions in their education due to displacement or other challenges. This program is designed to help students who have missed several years of school catch up on their education through an intensive, fast-paced curriculum. By condensing several years of learning into a shorter time frame, the program allows students to re-enter the formal education system at the appropriate level for their age.
+          The AEP has seen remarkable success, with over 50 students having completed the program and successfully transitioning to the next level of education. These students, who would have otherwise been left behind due to their disrupted education, are now on track to complete their schooling and pursue higher education or vocational training. The success stories emerging from this program demonstrate the resilience and determination of the students, many of whom have gone on to excel in their studies despite the challenges they have faced.
+          For example, some of the program’s graduates have been admitted to secondary schools or vocational training centers, where they continue to thrive academically and personally. The accelerated program’s flexibility and individualized approach ensure that each student’s unique needs are met, giving them the tools they need to succeed in both their education and future careers.                            
+        </p>
+      </div>
+    </div>
+    
+    <div class="min-h-[20vh]"></div>
+    <script src="../toggle.js"></script>
+</body>
+<footer class="bg-white dark:bg-gray-900">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="../index.html" class="flex items-center">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tenda Wema Community Project</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                      <a class="hover:text-gray-500" href="./programs.html">Programs</a>
+                    </li>
+                    <li class="mb-4">
+                      <a class="hover:text-gray-500" href="./impact.html">Impact</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="./gallery.html" class="hover:underline">Gallery</a>
+                    </li>
+                    <li>
+                      <a href="./about.html" class="hover:underline">About Us</a>
+                  </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="https://x.com/TendaWema52" class="hover:underline ">X</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="https://www.instagram.com/tendawema52/" class="hover:underline">Instagram</a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/tenda-wema-b2a8a1321" class="hover:underline">Linked In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="../index.html" class="hover:underline">Tenda Wema CBO</a>. All Rights Reserved.
+        </span>
+    </div>
+  </div>
+</footer>
+</html>

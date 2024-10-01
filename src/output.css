@@ -1036,6 +1036,10 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-justify {
   text-align: justify;
 }
@@ -1356,6 +1360,10 @@ video {
     max-height: 50vh;
   }
 
+  .md\:max-h-\[60vh\] {
+    max-height: 60vh;
+  }
+
   .md\:min-h-fit {
     min-height: -moz-fit-content;
     min-height: fit-content;
@@ -1395,6 +1403,10 @@ video {
 
   .md\:max-w-\[70vw\] {
     max-width: 70vw;
+  }
+
+  .md\:max-w-\[40vw\] {
+    max-width: 40vw;
   }
 
   .md\:columns-4 {

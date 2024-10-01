@@ -1397,6 +1397,10 @@ video {
     width: auto;
   }
 
+  .md\:w-\[50vw\] {
+    width: 50vw;
+  }
+
   .md\:min-w-\[45vw\] {
     min-width: 45vw;
   }

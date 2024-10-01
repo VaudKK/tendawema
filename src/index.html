@@ -51,7 +51,9 @@
         ></ion-icon>
       </div>
     </nav>
-    <div class="relative w-full min-h-[80vh]">
+
+    <!--Hero Image-->
+    <div class="relative w-full md:h-[100vh] h-[70vh]">
       <div class="absolute inset-0">
         <img
           src="./images/home/landing.jpg"
@@ -60,85 +62,92 @@
         />
       </div>
     </div>
+
+    <!--On small Devices-->
     <div class="md:hidden min-h-[8vh] flex justify-center items-center">
-        <p class="text-2xl font-light">WHAT WE DO</p>
-    </div>
-    <div class="w-full min-h-[70vh] grid md:grid-cols-2 text-white">
-      <div
-        class="order-2 md:order-1 bg-green-950 flex flex-col items-center justify-center"
-      >
-        <div class="w-3/4 md:w-1/2 ">
-          <p class="md:text-5xl text-3xl font-light">EDUCATE</p>
-          <p class="md:text-3xl text-xl capitalize py-10 font-light">
-            we identify and support vulnerable community members to become
-            self-reliant through facilitating timely access to quality
-            education.
-          </p>
-        </div>
-      </div>
-      <img
-        src="./images/home/teacher.jpeg"
-        alt="Teacher"
-        class="object-cover object-center w-full h-full order-1 md:order-2"
-      />
+        <p class="text-2xl font-semibold">What We Do</p>
     </div>
 
-    <div class="w-full min-h-[70vh] grid grid-cols-2 text-white">
-      <div class="col-span-2 md:col-span-1">
+    <!--Educate-->
+    <div class="w-full md:h-[80vh] flex md:flex-row flex-col md:px-10 px-5 items-center justify-center">
+      <div class="flex flex-col items-center justify-center md:px-10 order-2 md:order-1">
+          <div class="md:w-[45vw]">
+            <span class="md:text-7xl md:mt-0 mt-5 text-3xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-green-300 mb-2">Educate</span>
+            <p class="md:text-3xl text-xl capitalize md:py-10 font-light">we identify and support vulnerable community members to become
+              self-reliant through facilitating timely access to quality
+              education.
+            </p>
+          </div>
+      </div>
+      <div class="md:w-[45vw] md:flex-row rounded-2xl overflow-hidden md:h-[70vh] h-[40vh] order-1 md:order-2">
         <img
-          src="./images/home/parade.jpeg"
-          alt="Parade"
-          class="object-cover object-center h-full"
-        />
-      </div>
-      <div class="bg-amber-950 flex flex-col items-center justify-center col-span-2 md:col-span-1">
-        <div class="w-3/4 md:w-1/2">
-          <p class="md:text-5xl text-3xl font-light">EMPOWER</p>
-          <p class="md:text-3xl text-xl capitalize py-10 font-light">
-            provision of basic needs through identifying and supporting the
-            extremely vulnerable with food, rent and safety and hygiene items.
-          </p>
-        </div>
+            src="./images/home/teacher.jpeg"
+            alt="Teacher"
+            class="object-cover object-center w-full h-full"
+          />
       </div>
     </div>
 
-    <div class="w-full min-h-[70vh] grid grid-cols-2 text-white">
-      <div class="bg-sky-600 flex flex-col items-center justify-center col-span-2 md:col-span-1 order-2 md:order-1">
-        <div class="w-3/4 md:w-1/2">
-          <p class="md:text-5xl text-3xl font-light">GIVE HOPE</p>
-          <p class="md:text-3xl text-xl capitalize py-10 font-light">
-            Love and compassion are at the heart of true generosity. When we
-            give with love, we create hope for others.
-          </p>
-        </div>
-      </div>
-      <div class="col-span-2 md:col-span-1 order-1 md:order-2">
+
+    <!--Empower-->
+    <div class="w-full md:h-[80vh] flex md:flex-row flex-col md:px-10 md:mt-0 mt-20 px-5 items-center justify-center">
+      <div class="md:w-[45vw] md:flex-row rounded-2xl overflow-hidden md:h-[70vh] h-[40vh]">
         <img
-          src="./images/home/happy_kids.jpg"
-          alt="Happy Kids"
-          class="object-cover object-center w-full h-full"
-        />
+            src="./images/home/parade.jpeg"
+            alt="Parade"
+            class="object-cover object-center w-full h-full"
+          />
+      </div>
+      <div class="flex flex-col items-center justify-center md:px-10">
+          <div class="md:w-[45vw]">
+            <span class="md:text-7xl md:ml-10 md:mt-0 mt-5 text-3xl inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300 mb-2">Empower</span>
+            <p class="md:text-3xl md:ml-10 text-xl capitalize md:py-10 font-light">provision of basic needs through identifying and supporting the
+              extremely vulnerable with food, rent and safety and hygiene items.
+            </p>
+          </div>
       </div>
     </div>
 
-    <div class="flex flex-col items-center w-full min-h-[40vh] mt-10">
+    
+    <!--Give Hope-->
+    <div class="w-full md:h-[80vh] flex md:flex-row flex-col md:px-10 px-5 md:mt-0 mt-20 items-center justify-center">
+      <div class="flex flex-col items-center justify-center md:px-10 order-2 md:order-1">
+          <div class="md:w-[45vw]">
+            <span class="md:text-7xl text-3xl md:mt-0 mt-5 inline-flex font-semibold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-300 mb-2">Give Hope</span>
+            <p class="md:text-3xl text-xl capitalize md:py-10 font-light">Love and compassion are at the heart of true generosity. When we
+              give with love, we create hope for others.
+              education.
+            </p>
+          </div>
+      </div>
+      <div class="md:w-[45vw] md:flex-row rounded-2xl overflow-hidden md:h-[70vh] h-[40vh] order-1 md:order-2">
+        <img
+            src="./images/home/happy_kids.jpg"
+            alt="Happy Kids"
+            class="object-cover object-center w-full h-full"
+          />
+      </div>
+    </div>
+    
+    
+    <div class="flex flex-col items-center w-full min-h-[40vh] md:mt-20 mt-10">
         <p class="font-light text-3xl md:text-5xl">Donate To Us</p>
-        <div class="flex flex-col gap-10 mt-10">
-            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MPESA PayBill</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">PayBill No: 522533</p>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Account No: 6361810</p>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Account Name: Tendawema community project</p>
+        <div class="flex md:flex-row flex-col gap-10 mt-10">
+            <div class="block max-w-sm p-6 bg-green-800 border border-gray-200 rounded-lg shadow">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">MPESA PayBill</h5>
+                <p class="font-normal text-white">PayBill No: 522533</p>
+                <p class="font-normal text-white">Account No: 6361810</p>
+                <p class="font-normal text-white">Account Name: Tendawema community project</p>
             </div>
-            <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">KCB Bank (VISA)</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Account No: 1311905367</p>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Account Name: Tendawema community project</p>
+            <div class="block max-w-sm p-6 bg-green-800 border border-gray-200 rounded-lg shadow">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">KCB Bank (VISA)</h5>
+                <p class="font-normal text-white">Account No: 1311905367</p>
+                <p class="font-normal text-white">Account Name: Tendawema community project</p>
             </div>
         </div>
     </div>
 
-    <div class="min-h-[10vh]"></div>
+    <div class="min-h-[5vh]"></div>
 
     <script src="./toggle.js"></script>
   </body>

@@ -1186,6 +1186,10 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.\[--num\:100\] {
+  --num: 100;
+}
+
 .\[--num\:150\] {
   --num: 150;
 }
@@ -1196,6 +1200,10 @@ video {
 
 .\[--num\:300\] {
   --num: 300;
+}
+
+.\[--num\:500\] {
+  --num: 500;
 }
 
 .\[--num\:50\] {
